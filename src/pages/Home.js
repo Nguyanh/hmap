@@ -4,7 +4,6 @@ function Home(props) {
     return (
         <div>
             <NavBar/>
-            <text>Hi</text>
         </div>
     );
 };
