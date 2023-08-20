@@ -1,6 +1,11 @@
+import NavBar from "../components/NavBar";
+
 function Home(props) {
     return (
-        <text>Hi</text>
+        <div>
+            <NavBar/>
+            <text>Hi</text>
+        </div>
     );
 };
 
