@@ -8,7 +8,7 @@ function Program(props) {
             <Card.Img variant="top" src={icon}/>
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
-                <Card.Text>{description}</Card.Text>
+                <Card.Text className="text-start">{description}</Card.Text>
             </Card.Body>
     </Card>
     );
