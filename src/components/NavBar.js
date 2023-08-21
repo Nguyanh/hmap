@@ -2,15 +2,22 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Image from 'react-bootstrap/Image';
+import logo from '../logo.png';
 
 function NavBar() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary clearfix" sticky="top">
+        <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
             <Container>
                 {/* Logo and brand name */}
-                <Navbar.Brand className="fw-bold d-flex justify-content-start" href="#home">
-                    <Image src="../logo.png" rounded/>{' '}
+                <Navbar.Brand className="fw-bold" href="#home">
+                    <img 
+                        src={logo}
+                        alt=""
+                        width="30"
+                        height="30"
+                        className='d-inline-block align-top'
+                    />
+                    {' '}
                     HMAP
                 </Navbar.Brand>
 
