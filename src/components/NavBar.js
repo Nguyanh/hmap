@@ -25,27 +25,27 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#founder">Founder</Nav.Link>
+                        <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="/founder">Founder</Nav.Link>
                         <NavDropdown title="HSI" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Meet Team</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Join Us</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Past Placements</NavDropdown.Item>
+                            <NavDropdown.Item href="/hsi">About</NavDropdown.Item>
+                            <NavDropdown.Item href="/hsi#meet_team">Meet Team</NavDropdown.Item>
+                            <NavDropdown.Item href="/hsi#join_us">Join Us</NavDropdown.Item>
+                            <NavDropdown.Item href="/hsi#past_placements">Past Placements</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="PH116" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Meet Team</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Join Us</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Student Testimonials</NavDropdown.Item>
+                            <NavDropdown.Item href="/ph116">About</NavDropdown.Item>
+                            <NavDropdown.Item href="/ph116#meet_team">Meet Team</NavDropdown.Item>
+                            <NavDropdown.Item href="/ph116#join_us">Join Us</NavDropdown.Item>
+                            <NavDropdown.Item href="/ph116#student_testimonials">Student Testimonials</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="FSI" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Meet Team</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Join Us</NavDropdown.Item>
+                            <NavDropdown.Item href="/fsi">About</NavDropdown.Item>
+                            <NavDropdown.Item href="/fsi#meet_team">Meet Team</NavDropdown.Item>
+                            <NavDropdown.Item href="/fsi#join_us">Join Us</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#resources">TA Resources</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link href="/resources">TA Resources</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
