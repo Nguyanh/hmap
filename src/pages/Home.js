@@ -6,6 +6,7 @@ import Copyright from "../components/Copyright";
 import TitleScreen from "../components/TitleScreen";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 function Home(props) {

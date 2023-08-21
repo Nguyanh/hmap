@@ -4,7 +4,7 @@ function Program(props) {
     const { icon, name, description } = props;
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} border="light" className="shadow-sm">
             <Card.Img variant="top" src={icon}/>
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
