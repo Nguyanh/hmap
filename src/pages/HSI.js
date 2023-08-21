@@ -3,14 +3,14 @@ import NavBar from "../components/NavBar";
 import gradPic from "../gradPic.png"
 import Copyright from "../components/Copyright";
 
-function Contact() {
+function HSI() {
     return (
         <div>
             <NavBar/>
-            <SectionTitle img={gradPic} title='Contact Us'/>
+            <SectionTitle img={gradPic} title='Health Service Internship'/>
             <Copyright/>
         </div>
     );
 };
 
-export default Contact;
+export default HSI;
