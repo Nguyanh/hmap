@@ -5,9 +5,17 @@ function Program(props) {
 
     return (
         <Card style={{ width: '18rem' }} border="light" className="shadow-sm">
-            <Card.Img variant="top" src={icon}/>
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <div className="d-flex justify-content-center my-3">
+                    <img 
+                        src={icon}
+                        alt=""
+                        width="30"
+                        height="30"
+                        className=""
+                    />
+                </div>
+                <Card.Title className="text-center">{name}</Card.Title>
                 <Card.Text className="text-start">{description}</Card.Text>
             </Card.Body>
     </Card>
