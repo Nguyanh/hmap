@@ -9,7 +9,7 @@ import Row from "react-bootstrap/Row";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-function Home(props) {
+function Home() {
     // Main headers
     const aboutHeader = "About Us";
     const programsHeader = "What We Do";
