@@ -6,10 +6,10 @@ import Image from 'react-bootstrap/Image';
 
 function NavBar() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+        <Navbar expand="lg" className="bg-body-tertiary clearfix" sticky="top">
             <Container>
                 {/* Logo and brand name */}
-                <Navbar.Brand className="fw-bold" href="#home">
+                <Navbar.Brand className="fw-bold d-flex justify-content-start" href="#home">
                     <Image src="../logo.png" rounded/>{' '}
                     HMAP
                 </Navbar.Brand>

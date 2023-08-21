@@ -8,7 +8,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-
 function Home() {
     // Main headers
     const aboutHeader = "About Us";
@@ -45,20 +44,22 @@ function Home() {
     return (
         <div>
             <NavBar/>
-            <TitleScreen/>
-            <SectionWhite
-                header={aboutHeader}
-                content={aboutCont}
-            />
-            <SectionGray
-                header={programsHeader}
-                content={programsCont()}
-            />
-            <SectionWhite
-                header={alumniHeader}
-                content={alumniCont}
-            />
-            <Copyright/>
+            <div>
+                <TitleScreen/>
+                <SectionWhite
+                    header={aboutHeader}
+                    content={aboutCont}
+                />
+                <SectionGray
+                    header={programsHeader}
+                    content={programsCont()}
+                />
+                <SectionWhite
+                    header={alumniHeader}
+                    content={alumniCont}
+                />
+                <Copyright/>
+            </div>
         </div>
     );
 };
