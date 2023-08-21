@@ -1,11 +1,12 @@
 import SectionTitle from "../components/SectionTitle";
 import NavBar from "../components/NavBar";
+import gradPic from "../gradPic.png"
 
 function Contact() {
     return (
-        <div id="contact">
+        <div>
             <NavBar/>
-            <SectionTitle img='gradPic.png' title='TEST'/>
+            <SectionTitle img={gradPic} title='TEST'/>
         </div>
     );
 };
