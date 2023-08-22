@@ -55,7 +55,7 @@ function Home() {
             />
             <SectionWhite
                 header={alumniHeader}
-                content={alumniCont}
+                content={alumniCont()}
             />
             <Copyright/>
         </div>

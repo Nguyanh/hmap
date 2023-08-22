@@ -9,7 +9,7 @@ function NavBar() {
         <Navbar expand="lg" className="bg-body-tertiary" sticky="top">
             <Container>
                 {/* Logo and brand name */}
-                <Navbar.Brand className="fw-bold" href="#home">
+                <Navbar.Brand className="fw-bold" href="/home">
                     <img 
                         src={logo}
                         alt=""
