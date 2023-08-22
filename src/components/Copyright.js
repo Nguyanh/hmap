@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Copyright() {
     return (
-        <footer className = 'bg-light position-absolute bottom-0 w-100 p-4'>
+        <footer className = 'p-4'/*'position-absolute bottom-0 w-100 p-4'*/ style = {{backgroundColor: '#dee2e6'}}>
             <Container className="justify-content-center w-60">
                 <Container className="d-flex flex-row text-start">
                     <img src={ocf} className="image-thumbnail pe-3" alt=''/>
