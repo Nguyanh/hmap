@@ -4,8 +4,11 @@ import SectionWhite from "../components/SectionWhite";
 import SectionGray from "../components/SectionGray";
 import Copyright from "../components/Copyright";
 import TitleScreen from "../components/TitleScreen";
+import CardCarousel from "../components/CardCarousel";
+
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+
 import "bootstrap-icons/font/bootstrap-icons.css";
 import gradPic from "../gradPic.png"
 import hsiIcon from "../globe-americas.svg";
@@ -13,7 +16,7 @@ import phIcon from "../mortarboard-fill.svg";
 import fieldIcon from "../hospital-fill.svg";
 
 function Home() {
-    // Main headers
+    // Section headers
     const aboutHeader = "About Us";
     const programsHeader = "What We Do";
     const alumniHeader = "Alumni Testimonials";
@@ -36,9 +39,7 @@ function Home() {
         </Row>
     ;
     const alumniCont = () =>
-        <div>
-            {/* Carousel here */}
-        </div>
+        <CardCarousel />
     ;
 
 
@@ -57,7 +58,7 @@ function Home() {
                 />
                 <SectionWhite
                     header={alumniHeader}
-                    content={alumniCont}
+                    content={alumniCont()}
                 />
                 <Copyright/>
             </div>
