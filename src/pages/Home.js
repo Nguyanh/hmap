@@ -7,6 +7,7 @@ import TitleScreen from "../components/TitleScreen";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import gradPic from "../gradPic.png"
 import hsiIcon from "../globe-americas.svg";
 import phIcon from "../mortarboard-fill.svg";
 import fieldIcon from "../hospital-fill.svg";
@@ -44,20 +45,22 @@ function Home() {
     return (
         <div>
             <NavBar/>
-            <TitleScreen/>
-            <SectionWhite
-                header={aboutHeader}
-                content={aboutCont}
-            />
-            <SectionGray
-                header={programsHeader}
-                content={programsCont()}
-            />
-            <SectionWhite
-                header={alumniHeader}
-                content={alumniCont()}
-            />
-            <Copyright/>
+            <div>
+                <TitleScreen img={gradPic} title='Health and Medical Apprenticeship Program'/>
+                <SectionWhite
+                    header={aboutHeader}
+                    content={aboutCont}
+                />
+                <SectionGray
+                    header={programsHeader}
+                    content={programsCont()}
+                />
+                <SectionWhite
+                    header={alumniHeader}
+                    content={alumniCont}
+                />
+                <Copyright/>
+            </div>
         </div>
     );
 };
