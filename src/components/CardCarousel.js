@@ -1,5 +1,14 @@
 import { useState } from "react"; 
 import Carousel from "react-bootstrap/Carousel";
+import Card from 'react-bootstrap/Card';
+
+import leftIcon from "../arrow-left-circle-fill.svg";
+import rightIcon from "../arrow-right-circle-fill.svg";
+
+// TEST
+import pic from "../gradPic.png";
+import hsiIcon from "../globe-americas.svg";
+import Program from "../components/Program";
 
 function CardCarousel(props) {
     const [index, setIndex] = useState(0);
@@ -8,32 +17,48 @@ function CardCarousel(props) {
         setIndex(selectedIndex);
     };
 
+    // Carousel card
+    function card(name, position, description) {
+        return (
+            <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <div className="d-flex justify-content-center">
+                        <img 
+                            src={pic}
+                            alt=""
+                            width="200px"
+                            height="200px"
+                            style={{ borderRadius: "50%"}}
+                        />
+                    </div>
+                    <Card.Title className="text-center">{name} - {position}</Card.Title>
+                    <Card.Text className="text-start">{description}</Card.Text>
+                </Card.Body>
+            </Card>
+        );
+    };
+
     return (
-        // <Carousel activeIndex={index} onSelect={handleSelect}>
-        //     <Carousel.Item>
-        //     <ExampleCarouselImage text="First slide" />
-        //     <Carousel.Caption>
-        //         <h3>First slide label</h3>
-        //         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        //     </Carousel.Caption>
-        //     </Carousel.Item>
-        //     <Carousel.Item>
-        //     <ExampleCarouselImage text="Second slide" />
-        //     <Carousel.Caption>
-        //         <h3>Second slide label</h3>
-        //         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        //     </Carousel.Caption>
-        //     </Carousel.Item>
-        //     <Carousel.Item>
-        //     <ExampleCarouselImage text="Third slide" />
-        //     <Carousel.Caption>
-        //         <h3>Third slide label</h3>
-        //         <p>
-        //         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-        //         </p>
-        //     </Carousel.Caption>
-        //     </Carousel.Item>
-        // </Carousel>
+        <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            slide={false}
+            controls={true}
+            prevIcon={<ul>leftIcon</ul>}
+            nextIcon={rightIcon}
+        >
+            <Carousel.Item>
+                {card("Thu", "Developer", "TEST")}
+            </Carousel.Item>
+
+            <Carousel.Item>
+                <Program icon={hsiIcon} name="HSI" description="TEST2"/>
+            </Carousel.Item>
+            
+            <Carousel.Item>
+                <Program icon={hsiIcon} name="HSI" description="TEST3"/>
+            </Carousel.Item>
+        </Carousel>
     );
 };
 

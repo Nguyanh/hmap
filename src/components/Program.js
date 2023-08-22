@@ -12,7 +12,6 @@ function Program(props) {
                         alt=""
                         width="30"
                         height="30"
-                        className=""
                     />
                 </div>
                 <Card.Title className="text-center">{name}</Card.Title>

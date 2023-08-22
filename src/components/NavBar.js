@@ -15,7 +15,7 @@ function NavBar() {
                         alt=""
                         width="30"
                         height="30"
-                        className='d-inline-block align-top'
+                        className='d-inline-block align-top rounded'
                     />
                     {' '}
                     HMAP
