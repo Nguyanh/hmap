@@ -46,7 +46,7 @@ function Home() {
         <div>
             <NavBar/>
             <div>
-                <TitleScreen img={gradPic} title='Health and Medical Apprenticeship Program'/>
+                <TitleScreen img={gradPic} title='Health and Medical Apprenticeship Program' subtitle = 'UC Berkeley Public Health and Medical Organization'/>
                 <SectionWhite
                     header={aboutHeader}
                     content={aboutCont}
