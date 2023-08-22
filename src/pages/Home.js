@@ -7,6 +7,7 @@ import TitleScreen from "../components/TitleScreen";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import gradPic from "../gradPic.png"
 
 function Home() {
     // Main headers
@@ -45,7 +46,7 @@ function Home() {
         <div>
             <NavBar/>
             <div>
-                <TitleScreen/>
+                <TitleScreen img={gradPic} title='Health and Medical Apprenticeship Program'/>
                 <SectionWhite
                     header={aboutHeader}
                     content={aboutCont}
